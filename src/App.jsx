@@ -9,7 +9,7 @@ function App() {
   const [birthDate, setBirthDate] = useState("24-03-2019");
   const [age, setAge] = useState("");
   const [race, setRace] = useState("Shih Tzu");
-  const [owner, setOwner] = useState("MPM");
+  const [owner, setOwner] = useState("Marvella Pérez Marín");
 
   useEffect(() => {
     calculateAge();
@@ -129,6 +129,30 @@ function App() {
                       >
                         <div class="accordion-body">
                           Ninguna
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingThree">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#flush-collapseThree"
+                          aria-expanded="false"
+                          aria-controls="flush-collapseThree"
+                        >
+                          Carnet Digital
+                        </button>
+                      </h2>
+                      <div
+                        id="flush-collapseThree"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingThree"
+                        data-bs-parent="#accordionFlushExample"
+                      >
+                        <div class="accordion-body">
+                          <a href="/candyVacunas.pdf" target={"_blank"}>👉 Descarga aquí </a>
                         </div>
                       </div>
                     </div>
